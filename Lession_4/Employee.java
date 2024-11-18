@@ -1,19 +1,16 @@
+package Lession_4;
+
 public class Employee {
-    public static void main(String[] args) {
-        Employee Ivan = new Employee("Иван", "Москаленко", "Андреевич", "Менеджер", "UncleIvan@mail.ru", 89280172452L, 50000, 56);
-        Ivan.display();
-    }
+    public String firstName;
+    public String lastName;
+    public String patronymic;
+    public String position;
+    public String email;
+    public long phoneNumber;
+    public int salary;
+    public int age;
 
-    String firstName;
-    String lastName;
-    String patronymic;
-    String position;
-    String email;
-    long phoneNumber;
-    int salary;
-    int age;
-
-    Employee(String firstName, String lastName, String patronymic, String position, String email, long phoneNumber, int salary, int age) {
+    public Employee(String firstName, String lastName, String patronymic, String position, String email, long phoneNumber, int salary, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.patronymic = patronymic;
