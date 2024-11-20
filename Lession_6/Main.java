@@ -27,6 +27,11 @@ public class Main {
                 {"6", "12", "11", "25"},
                 {"1", "2", "3", "4"}
         };
+        String[][] penaltyArray = {{"1", "2", "3", "4"},
+                {"5", "6", "7", "8"},
+                {"25", "50", "10", "60", "3", "23"},
+                {"11", "22", "33", "44"}
+        };
         try {
             System.out.println("Сумма fourxfourArray " + checkArray(fourxArray));
         } catch (MyArrayDataExeption | MyArraySizeExeption exception) {
@@ -44,6 +49,11 @@ public class Main {
         }
         try {
             System.out.println("Сумма rightArray " + checkArray(rightArray));
+        } catch (MyArrayDataExeption | MyArraySizeExeption exception) {
+            System.out.println(exception.getMessage());
+        }
+        try {
+            System.out.println("Сумма penaltyArray " + checkArray(penaltyArray));
         } catch (MyArrayDataExeption | MyArraySizeExeption exception) {
             System.out.println(exception.getMessage());
         }
