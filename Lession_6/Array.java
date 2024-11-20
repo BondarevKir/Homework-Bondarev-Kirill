@@ -7,7 +7,11 @@ public class Array {
         }
         int a = 0;
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
+            for (int j = 0; j < array[i].length; j++) {
+
+                if (array[i].length != 4) {
+                    throw new MyArraySizeExeption("Массив должен быть 4x4");
+                }
                 try {
                     a = a + Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException nfe) {
@@ -17,5 +21,6 @@ public class Array {
             }
         }
         return a;
+
     }
 }
